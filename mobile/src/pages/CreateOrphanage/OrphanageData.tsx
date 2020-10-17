@@ -44,9 +44,7 @@ export default function OrphanageData() {
           type: 'image/jpg',
           uri: image,
         } as any)
-    })
-
-    console.log(data);
+    });
 
     await api.post('orphanages', data);
     navigation.navigate('OrphanagesMap');
