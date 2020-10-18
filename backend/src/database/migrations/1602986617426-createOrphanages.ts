@@ -9,7 +9,7 @@ export class createOrphanages1602627668350 implements MigrationInterface {
                 {
                     name: 'id',
                     type: 'integer',
-                    unsigned: true,
+                    unsigned: true, 
                     isPrimary: true,
                     isGenerated: true,
                     generationStrategy: 'increment',
@@ -46,6 +46,10 @@ export class createOrphanages1602627668350 implements MigrationInterface {
                     name: 'open_on_weekends',
                     type: 'boolean',
                     default: false,
+                },
+                {
+                    name: 'whatsapp',
+                    type: 'varchar',
                 }
             ]
         }))
